@@ -391,7 +391,7 @@ function story() {
                 return `
                     You manage to find a cupboard full of dangerous items.
                     There are pocket knives and even a gun, but no bullets.
-                    The most useful item looks to be a length of torch, which
+                    The most useful item looks to be a torch, which
                     you stick in your pocket.
                 `
             } else {
