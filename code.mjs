@@ -2,6 +2,7 @@ import { Writer } from "./Writer.mjs"
 
 const PAGES = []
 let SCORE = 0
+const MAX_SCORE = 7
 const ANSWERS = []
 const SAVED_ANSWERS = []
 
@@ -439,7 +440,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         ANSWERS.splice(0)
         await playOnce()
         await write(`
-            You finished the game with a score of ${SCORE} out of ${ANSWERS.length}.
+            You finished the game with a score of ${SCORE} out of ${MAX_SCORE}.
             Click the next button to try again.
         `)
         await waitNext()
